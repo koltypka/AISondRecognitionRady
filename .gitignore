@@ -1,0 +1,8 @@
+/result/*
+!/result/.gitkeep
+/audio/*
+!/audio/.gitkeep
+/data/*
+!/data/.gitkeep
+/.idea
+/pretrained_models
