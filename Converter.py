@@ -1,6 +1,7 @@
 import ffmpeg
 
 def convert(file_path, output_filename="audio//audio.wav"):
+    "Конвертация"
     try:
         stream = (
             ffmpeg
@@ -15,9 +16,7 @@ def convert(file_path, output_filename="audio//audio.wav"):
         )
 
         stream.run()
-        print(f"Конвертация завершена: {output_filename}")
         return output_filename
 
     except ffmpeg.Error as e:
-        print("Ошибка при конвертации")
         print(e.stderr.decode('utf8'))
